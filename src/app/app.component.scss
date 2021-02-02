@@ -61,13 +61,13 @@ body{
   color: #111;
 }
 .btn span:before{
-  content: "Off";
+  content: "ON";
 }
 #btn:checked ~ div#bulb-on{
   animation: none;
 }
 #btn:checked ~ .btn span:before{
-  content: "ON";
+  content: "Off";
 }
 .wrapper input{
   display: none;
