@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bulb-on';
+
+
+  bulb=false;
+
+  button(){
+    if(this.bulb==false){
+     this.bulb=true;
+    }
+    else{
+      this.bulb=false
+    }
+  }
 }
