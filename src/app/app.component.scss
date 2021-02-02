@@ -19,14 +19,17 @@ body{
   background-color: black;
   background-size: cover;
   background-position: center;
+  div{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://cdn.ps.emap.com/wp-content/uploads/sites/3/2020/05/Light-lamp-1024x716.jpg");
+  }
 }
-img{
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: 1;
-  background-repeat: no-repeat;
-}
+
 .btn{
   position: absolute;
   bottom: 0;
@@ -61,7 +64,7 @@ img{
 .btn span:before{
   content: "Off";
 }
-#btn:checked ~ img#bulb-on{
+#btn:checked ~ div#bulb-on{
   animation: none;
 }
 #btn:checked ~ .btn span:before{

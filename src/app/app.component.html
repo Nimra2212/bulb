@@ -1,6 +1,6 @@
 <div class="wrapper">
   <input type="checkbox" id="btn">
-  <img id="bulb-off" *ngIf='bulb==true' src="./../../../assets/bulb.jpg">
+  <div loading="lazy" id="bulb-off" *ngIf='bulb==true'></div>
   <label for="btn" (click)='button()' class="btn">
     <span></span>
   </label>
