@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +9,16 @@ export class AppComponent implements OnInit{
   title = 'bulb-on';
 
   bgOpecity=0
-ngOnInit(){
+  
+  @HostListener('contextmenu', ['$event'])
+  onRightClick(event) {
+    event.preventDefault();
+
+  }
+  ngOnInit() {
+     document.onkeydown = function (e) {
+      return false;
+    }
   this.bgOpecity=0
 }
   button(){
