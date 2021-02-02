@@ -10,15 +10,8 @@ export class AppComponent implements OnInit{
 
   bgOpecity=0
   
-  @HostListener('contextmenu', ['$event'])
-  onRightClick(event) {
-    event.preventDefault();
-
-  }
   ngOnInit() {
-     document.onkeydown = function (e) {
-      return false;
-    }
+    
   this.bgOpecity=0
 }
   button(){
