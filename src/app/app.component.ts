@@ -1,18 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit{
+export class AppComponent {
   title = 'bulb-on';
 
-  bgImg=''
+
   bulb=false;
-ngOnInit(){
-  this.bgImg="url('./../../../assets/bulb.jpg')"
-}
+
   button(){
     if(this.bulb==false){
      this.bulb=true;
